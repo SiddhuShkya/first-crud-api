@@ -17,11 +17,12 @@ first-crud-api/
 To install dependencies and start the server locally, run the following commands in your terminal:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ fastapi dev
 ```
+
 *The server will start on `http://127.0.0.1:8000`.*
 
 ## Endpoints
