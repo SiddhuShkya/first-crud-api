@@ -6,10 +6,11 @@ This is a small backend API that manages a to-do list, built as part of the "Bui
 ## Project Structure
 ```text
 first-crud-api/
-├── main.py            # Core application file containing all routing and logic
-├── requirements.txt   # Project dependencies (FastAPI, Uvicorn, Pydantic)
-├── .gitignore         # Ignored files (venv, pycache)
-└── README.md          # Project documentation
+├── main.py                   # Core application file containing all routing and logic
+├── requirements.txt          # Project dependencies (FastAPI, Uvicorn, Pydantic)
+├── .gitignore                # Ignored files (venv, pycache)
+├── swagger-screenshot.png    # Screenshot of the Swagger UI
+└── README.md                 # Project documentation
 ```
 
 ## Setup and Run Instructions
