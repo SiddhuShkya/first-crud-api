@@ -67,6 +67,7 @@ The scene: before a restaurant serves food, the doors have to open.
 Every API needs a front door that says what it is.
 
 1. Add the endpoint `GET /` returning JSON that describes your API:
+
    ```json
    { "name": "Task API", "version": "1.0", "endpoints": ["/tasks"] }
    ```
@@ -94,6 +95,7 @@ Now the shelves. Your "database" is just a list in your code.
 A customer walks in with a new order.
 
 1. Add `POST /tasks`. The client sends the new task as JSON in the **request body**:
+
    ```json
    { "title": "Buy milk" }
    ```
@@ -101,6 +103,7 @@ A customer walks in with a new order.
 3. **Validate** the input: if `title` is missing or empty, return 400 ("Bad Request") with a JSON error saying what's wrong. This is your first business rule — the server never trusts the client.
 
 **Checkpoint:**
+
 ```bash
 curl -i -X POST http://localhost:3000/tasks -H "Content-Type: application/json" -d '{"title":"Buy milk"}'
 ```
